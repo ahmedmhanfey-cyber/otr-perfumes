@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f6f1">
+
+    <title>OTR Perfumes | عطرك، حكايتك الفاخرة</title>
+    <meta name="description" content="اكتشف مجموعتنا المختارة من أرقى العطور النيش والشرقية مع OTR Perfumes. نفحات تأسر الحواس وحكايات تدوم.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Announcement Bar with interactive coupon hint -->
+    <div class="announcement">
+        <span class="sparkle">✦</span>
+        توصيل مجاني للطلبات فوق 1500 جنيه | استخدم كود <strong>OTR10</strong> للحصول على خصم 10%
+        <span class="sparkle">✦</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <a class="logo" href="#home" aria-label="OTR Perfumes الرئيسية">
+            OTR<span>.</span>
+            <small>PERFUMES</small>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="القائمة الرئيسية">
+            <a href="#home">الرئيسية</a>
+            <a href="#products">اكتشف العطور</a>
+            <a href="#collections">مجموعاتنا</a>
+            <a href="#about">قصتنا</a>
+        </nav>
+
+        <div class="header-actions">
+            <!-- Search Toggle -->
+            <button class="icon-button" id="searchToggle" aria-label="البحث عن عطر" title="البحث">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+            </button>
+
+            <!-- Favorites Shortcut -->
+            <button class="icon-button favorite-shortcut" id="favoritesToggle" aria-label="عرض المفضلة" title="المفضلة">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5.2-8.8 10.2-8.8 10.2S3.2 14 3.2 8.8A4.6 4.6 0 0 1 12 6.6a4.6 4.6 0 0 1 8.8 2.2Z"/></svg>
+                <span class="tiny-count" id="favoriteCount">0</span>
+            </button>
+
+            <!-- Cart Button -->
+            <button class="cart-button" id="cartToggle" aria-label="فتح سلة المشتريات">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 1.9-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+                <span>السلة</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+            <!-- Mobile Hamburger -->
+            <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <span class="eyebrow"><span class="eyebrow-line"></span> فن اختيار العطر الفاخر</span>
+
+                <h1>ليس مجرد عطر،<br>بل <em>بصمتك الخاصة.</em></h1>
+
+                <p class="hero-description">
+                    روائح نيش شرقية وعالمية صُممت لتروي تفاصيلك الأنيقة.
+                    تركيزات نقية تدوم، مكونات طبيعية فاخرة، وتغليف يليق بذوقك الرفيع.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-dark glow-hover" href="#products">
+                        اكتشف العطور <span aria-hidden="true">←</span>
+                    </a>
+                    <a class="text-link" href="#collections">فلسفة التوليف العطري ↙</a>
+                </div>
+
+                <div class="hero-proof">
+                    <div class="proof-avatars" aria-hidden="true">
+                        <span>ع</span><span>م</span><span>ن</span>
+                    </div>
+                    <div>
+                        <strong>أكثر من 1,500 عميل يثقون بنا</strong>
+                        <p>عطور تدوم لأكثر من 12 ساعة بثبات استثنائي</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=85"
+                        alt="مجموعة عطور OTR بتصميم أنيق"
+                        fetchpriority="high"
+                    >
+                    <div class="image-label">
+                        <span>THE ROYAL SIGNATURE</span>
+                        <strong>أناقة وفخامة في كل قطرة</strong>
+                    </div>
+                </div>
+
+                <div class="hero-stamp" aria-label="اكتشف عطرك">
+                    <span>HAUTE</span>
+                    <strong>PARFUM</strong>
+                    <span>✳</span>
+                </div>
+                <span class="hero-decoration" aria-hidden="true">OTR / LUXURY 2026</span>
+            </div>
+        </section>
+
+        <!-- Trust Benefits -->
+        <section class="trust-strip" aria-label="مميزات المتجر">
+            <div class="trust-item">
+                <span class="trust-icon">✦</span>
+                <div><strong>زيوت عطرية فرنسية</strong><small>ثبات عالي يدوم طويلاً</small></div>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">◇</span>
+                <div><strong>طلب مباشر عبر واتساب</strong><small>تأكيد فوري دون تعقيد</small></div>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">♧</span>
+                <div><strong>تغليف هدايا فاخر</strong><small>علب مخملية وأكياس أنيقة</small></div>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">↗</span>
+                <div><strong>توصيل سريع لكافة المحافظات</strong><small>شحن مجاني فوق 1500 ج.م</small></div>
+            </div>
+        </section>
+
+        <!-- Products Catalog -->
+        <section class="products-section section-pad" id="products">
+            <div class="section-top">
+                <div>
+                    <span class="eyebrow">THE EXCLUSIVE COLLECTION</span>
+                    <h2>اعثر على عطرك المفضل</h2>
+                    <p class="section-description">انقر على أي عطر لاستكشاف مكوناته الهرمية (الافتتاحية والقلب والقاعدة) واختيار الحجم المناسب.</p>
+                </div>
+                <span class="product-total" id="productTotal">8 عطور</span>
+            </div>
+
+            <div class="catalog-toolbar">
+                <div class="category-filters" id="categoryFilters" aria-label="تصفية حسب النوع">
+                    <button class="filter-button active" data-category="all" aria-pressed="true">جميع العطور</button>
+                    <button class="filter-button" data-category="men" aria-pressed="false">رجالي</button>
+                    <button class="filter-button" data-category="women" aria-pressed="false">نسائي</button>
+                    <button class="filter-button" data-category="unisex" aria-pressed="false">مشترك للجنسين</button>
+                    <button class="filter-button" data-category="sale" aria-pressed="false">العروض المميزة</button>
+                </div>
+
+                <div class="catalog-tools">
+                    <label class="search-field">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+                        <input type="search" id="searchInput" placeholder="ابحث بالاسم أو المكونات (عود، عنبر، فانيليا...)" aria-label="ابحث عن عطر">
+                        <button id="clearSearch" class="clear-search" type="button" aria-label="مسح البحث" hidden>×</button>
+                    </label>
+
+                    <label class="sort-field">
+                        <span class="sr-only">ترتيب المنتجات</span>
+                        <select id="sortSelect">
+                            <option value="featured">ترتيب حسب: المميز</option>
+                            <option value="price-asc">السعر: من الأقل</option>
+                            <option value="price-desc">السعر: من الأعلى</option>
+                            <option value="rating">الأعلى تقييمًا</option>
+                            <option value="name">الاسم: أبجديًا</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid" aria-live="polite"></div>
+
+            <div class="empty-state" id="emptyMessage" hidden>
+                <span>⌕</span>
+                <h3>لم نعثر على هذا العطر</h3>
+                <p>جرّب البحث بكلمة أخرى أو اختر تصنيفاً آخر.</p>
+                <button class="button button-dark" id="resetFilters">عرض جميع العطور</button>
+            </div>
+        </section>
+
+        <!-- Brand Philosophy & Editorial -->
+        <section class="editorial" id="collections">
+            <div class="editorial-image">
+                <img
+                    src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1000&q=85"
+                    alt="تفاصيل زجاجة عطر بتصميم فاخر"
+                    loading="lazy"
+                >
+                <span class="editorial-image-caption">THE ART OF PERFUMERY</span>
+            </div>
+            <div class="editorial-copy">
+                <span class="eyebrow">OUR PHILOSOPHY</span>
+                <h2>الرائحة الأولى<br>تُلفت الانتباه.<br><em>والذكرى تبقى.</em></h2>
+                <p>
+                    نؤمن في OTR أن العطر ليس مجرد لمسة جمالية، بل هو هويتك غير المرئية التي تسكن ذاكرة من حولك. نصنع كل زجاجة بعناية فائقة، مستخدمين أندر الزيوت الطبيعية والمستخلصات الشرقية العريقة لتقديم تجربة ثبات استثنائية.
+                </p>
+                <a class="text-link" href="#products">تصفّح التشكيلة الكاملة <span>←</span></a>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter section-pad">
+            <span class="eyebrow">A NOTE FROM OTR</span>
+            <h2>انضم إلى نادي عطور OTR</h2>
+            <p>احصل على أحدث الإصدارات الخاصة وكوبونات الخصم الحصرية مباشرة في بريدك.</p>
+
+            <form class="newsletter-form" id="newsletterForm">
+                <label class="sr-only" for="newsletterEmail">بريدك الإلكتروني</label>
+                <input type="email" id="newsletterEmail" placeholder="أدخل بريدك الإلكتروني" required>
+                <button class="button button-dark" type="submit">اشترك الآن <span>←</span></button>
+            </form>
+            <p class="newsletter-message" id="newsletterMessage" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="footer-main">
+            <div>
+                <a class="logo footer-logo" href="#home">OTR<span>.</span><small>PERFUMES</small></a>
+                <p>رائحتك. أسلوبك. حكايتك التي لا تُنسى.</p>
+                <!-- Business WhatsApp Configuration Preview & Quick Edit -->
+                <div class="whatsapp-config-badge">
+                    <span>📱 واتساب المتجر:</span>
+                    <strong id="whatsappDisplayNum">+20 100 000 0000</strong>
+                    <button type="button" id="editWhatsappBtn" class="link-btn">تغيير الرقم</button>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#products">العطور</a>
+                <a href="#collections">مجموعاتنا</a>
+                <a href="#about">قصتنا</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 OTR Perfumes. جميع الحقوق محفوظة.</span>
+            <span>صُمم بشغف وأناقة ليليق بذوقك.</span>
+        </div>
+    </footer>
+
+    <!-- Dimmer Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Product Details Quick-View Modal -->
+    <section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalPerfumeName" aria-hidden="true" inert>
+        <button class="close-button modal-close-btn" id="closeProductModal" aria-label="إغلاق تفاصيل العطر">×</button>
+        <div class="product-modal-inner" id="productModalContent">
+            <!-- Dynamically populated via script.js -->
+        </div>
+    </section>
+
+    <!-- Shopping Cart Drawer -->
+    <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true" inert>
+        <div class="drawer-header">
+            <div><span class="eyebrow">YOUR SELECTION</span><h2>سلة مشترياتك</h2></div>
+            <button class="close-button" id="closeCart" aria-label="إغلاق السلة">×</button>
+        </div>
+
+        <div class="delivery-progress" id="deliveryProgress"></div>
+        
+        <div class="cart-items" id="cartItems"></div>
+
+        <!-- Coupon Code Application Box in Cart -->
+        <div class="cart-coupon-box">
+            <div class="coupon-input-group">
+                <input type="text" id="cartCouponInput" placeholder="كود الخصم (مثل: OTR10)" aria-label="كود الخصم">
+                <button type="button" id="applyCartCoupon" class="button button-sand">تطبيق</button>
+            </div>
+            <div class="coupon-status" id="couponStatusMessage"></div>
+        </div>
+
+        <div class="drawer-footer">
+            <div class="cart-summary-row"><span>قيمة المنتجات</span><strong id="cartSubtotal">0 ج.م</strong></div>
+            <div class="cart-summary-row" id="discountRow" hidden><span>الخصم المطبق</span><strong class="discount-value" id="cartDiscount">-0 ج.م</strong></div>
+            <div class="cart-summary-row"><span>التوصيل</span><strong id="deliveryCost">—</strong></div>
+            <div class="cart-summary-row total-row"><span>الإجمالي النهائي</span><strong id="cartTotal">0 ج.م</strong></div>
+            
+            <button class="button button-dark checkout-button glow-hover" id="checkoutButton">متابعة الطلب عبر واتساب <span>←</span></button>
+            <p class="drawer-note">سيتم تجهيز طلبك وإرساله مباشرة إلى محادثة واتساب الرسمية.</p>
+        </div>
+    </aside>
+
+    <!-- Checkout Modal with WhatsApp Order Dispatch -->
+    <section class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true" inert>
+        <div class="checkout-heading">
+            <div><span class="eyebrow">ALMOST YOURS</span><h2 id="checkoutTitle">تأكيد بيانات التوصيل</h2></div>
+            <button class="close-button" id="closeCheckout" aria-label="إغلاق">×</button>
+        </div>
+
+        <p class="checkout-intro">أدخل بياناتك لتجهيز رسالة طلبك الرسمية بنقرة واحدة عبر تطبيق واتساب.</p>
+
+        <form id="checkoutForm">
+            <label for="customerName">الاسم بالكامل</label>
+            <input id="customerName" name="name" autocomplete="name" required maxlength="100" placeholder="مثال: أحمد محمود">
+
+            <label for="customerPhone">رقم الهاتف (للتواصل والشحن)</label>
+            <input id="customerPhone" name="phone" type="tel" autocomplete="tel" required maxlength="25" placeholder="مثال: 01012345678">
+
+            <label for="customerAddress">عنوان التوصيل بالتفصيل</label>
+            <textarea id="customerAddress" name="address" autocomplete="street-address" required maxlength="500" rows="3" placeholder="المحافظة، المنطقة، اسم الشارع، رقم العمارة أو علامة مميزة"></textarea>
+
+            <label for="customerNotes">ملاحظات إضافية أو وقت التسليم المفضل <span>(اختياري)</span></label>
+            <textarea id="customerNotes" name="notes" maxlength="500" rows="2" placeholder="مثال: تغليف هدية فاخرة أو الاتصال قبل الوصول"></textarea>
+
+            <!-- Order Breakdown Summary -->
+            <div class="checkout-order-summary" id="checkoutSummary"></div>
+
+            <p class="checkout-error" id="checkoutError" role="alert"></p>
+
+            <button class="button button-dark checkout-submit glow-hover" type="submit">
+                <span>تأكيد وإرسال الطلب عبر واتساب</span>
+                <span aria-hidden="true">↗</span>
+            </button>
+            
+            <p class="drawer-note">الدفع عند الاستلام بعد مراجعة العطر وتأكيد الشحن.</p>
+        </form>
+    </section>
+
+    <!-- WhatsApp Number Change Modal -->
+    <section class="checkout-modal mini-modal" id="whatsappConfigModal" role="dialog" aria-modal="true" aria-labelledby="wpModalTitle" aria-hidden="true" inert>
+        <div class="checkout-heading">
+            <div><span class="eyebrow">STORE CONFIG</span><h2 id="wpModalTitle">رقم واتساب المتجر</h2></div>
+            <button class="close-button" id="closeWpModal" aria-label="إغلاق">×</button>
+        </div>
+        <form id="whatsappConfigForm" class="wp-modal-form">
+            <p class="checkout-intro">أدخل رقم هاتف واتساب الخاص بمتجرك لاستقبال الطلبات عليه (مع كود الدولة دون أصفار أو مسافات، مثال لمصر: 2010XXXXXXXX):</p>
+            <label for="wpInput">رقم الواتساب الدولي:</label>
+            <input id="wpInput" type="tel" required pattern="[0-9]{10,15}" placeholder="مثال: 201012345678">
+            <button class="button button-dark" style="width:100%; margin-top:15px;" type="submit">حفظ الرقم</button>
+        </form>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
